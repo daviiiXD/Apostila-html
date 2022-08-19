@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formularios HTML</title>
+        <link rel="stylesheet" href="/base.css">
+    </head>
+    <body>
+        <!-- Cabeçalho -->
+        <header>
+            <h3 class="titulo">Ok, o que são formulários HTML?</h3>
+        </header>
+
+        <!-- Corpo -->
+        <main>
+            <!-- Introdução -->
+            <section>
+                <h3 class="topico">
+                    Introdução
+                </h3>
+                <p>
+                    Formulários HTML são usados para enviar dados do cliente (navegador do usuário), para um servidor, quê? é simples, você constantemente faz login em serviços na web não é? É isso! O seu navegador vai mandar aquelas informações que você colocou dentro dos campos para algum lugar que vai tratar todos esses dados, e logar você em sua conta.
+                    <br>
+                    É assim que se inicia um formulário:
+                </p>
+                <!-- Exemplo -->
+                <p class="codepen" data-height="300" data-default-tab="html" data-slug-hash="GRxPPgQ" data-user="Davikkkkk" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen
+                        <a href="https://codepen.io/Davikkkkk/pen/GRxPPgQ">
+                            Base formulário</a>
+                        by Daviii (<a href="https://codepen.io/Davikkkkk">@Davikkkkk</a>)
+                                                                                                                on
+                        <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            </section>
+
+            <!-- Explicação do exemplo -->
+            <section>
+                <h3 class="topico">
+                    Ok, mas o que é tudo isso?
+                </h3>
+                <p>
+                    A tag &lt;form&gt;&lt;/form&gt; é simplesmente o que define onde começa e onde termina o formulário, assim podemos colocar os inputs dentro dele, a tag de fechamento é importante pois o botão que irá enviar os dados só vai enviar os dados que estão no mesmo formulário que ele. Você pode ter percebido que tem umas coisas dentro do &lt;form&gt;, isso é chamado de “Atributos”, é onde podemos colocar certas configurações extras na tag. No nosso caso temos “Action” e “Method”.
+                    <br>
+                </p>
+                <p class="subtopico">
+                    Action
+                </p>
+                <p>
+                    O action define para onde o formulário deve enviar os dados, como você pode ver eu deixei uma “#” dentro, isso porque não temos nenhum arquivo que possa recebê-los então muitos programadores (incluindo eu) colocam uma # dentro, para o atributo não ficar simplesmente vazio.
+                </p>
+                <br/>
+                <p class="subtopico">
+                    Method
+                </p>
+                <p>
+                    O method define como o form deve enviar os dados, Nós estamos usando o método “get” que irá passar os dados pela URL do site (o link dele).
+                </p>
+            </section>
+            <!-- Explicação inputs -->
+            <section>
+                <h3 class="topico">
+                    Inputs
+                </h3>
+                <p>
+                    Os inputs são simplesmente onde o usuário poderá colocar os dados. Por exemplo, uma página de login, onde temos campos de email, senha e um botão de enviar. Existem vários tipos, mas iremos tratar apenas dos principais.
+                    <br>
+                    Exemplo:
+                </p>
+
+                <!-- Exemplo -->
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="ExEGpPJ" data-editable="true" data-user="Davikkkkk" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen
+                        <a href="https://codepen.io/Davikkkkk/pen/ExEGpPJ">
+                            formulario basico</a>
+                        by Daviii (<a href="https://codepen.io/Davikkkkk">@Davikkkkk</a>)
+                                                                                                                                                                                                                                    on
+                        <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                <br>
+            </section>
+            <section>
+                <!-- Explicação do exemplo -->
+                <h3 class="topico">Ok, agora tem muito mais coisa!</h3>
+                <p>
+                    Exatamente, e eu vou explicar cada uma delas 🙂.
+                </p>
+
+                <p class="subtopico">
+                    type:
+                </p>
+                <p>
+                    O type é simplesmente onde você define qual tipo de input você quer usar, no caso eu coloquei: text (texto), password (senha) e number (números inteiros). Como eu disse antes existem vários outros tipos, então pesquise um pouco sobre eles. 😇
+                </p>
+
+                <br>
+
+                <hr>
+
+                <p class="subtopico">
+                    name:
+                </p>
+                <p>
+                    O type é simplesmente onde você define qual tipo de input você quer usar, no caso eu coloquei: text (texto), password (senha) e number (números inteiros).
+                </p>
+
+                <hr>
+
+                <p class="subtopico">
+                    placeholder:
+                </p>
+                <p>
+                    A função do placeholder se resume a colocar um texto dentro do input, sendo que esse texto não vai ser o que o seu navegador vai pegar do input. PERA, O QUÊ????? seguinte… como você deve ter percebido, independente de qual tipo de input você colocar, eles são idênticos! então como o seu usuário vai saber onde colocar o seu nome ou senha? É para isso que serve o placeholder, ele é exatamente aquele “textinho” que te falou onde colocar o seu nome, senha ou idade.
+                </p>
+
+                <hr>
+
+                <p class="subtopico">
+                    required:
+                </p>
+                <p>
+                    Não dá para fazer login em nenhum serviço sem colocar um nome ou senha correto? mas como você faz para deixar um dado obrigatório? Com o required! Você já tentou não colocar a senha no exemplo acima?
+                </p>
+            </section>
+            <section>
+                <!-- Explicação Labels -->
+                <h3 class="topico">
+                    Label
+                </h3>
+                <p>
+                    labels são um método para indicar um input, como se fosse um placeholder, mas ele fica assim:
+                </p>
+
+                <!--Exemplo label-->
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="vYRbxxW" data-editable="true" data-user="Davikkkkk" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen
+                        <a href="https://codepen.io/Davikkkkk/pen/vYRbxxW">
+                            Untitled</a>
+                        by Daviii (<a href="https://codepen.io/Davikkkkk">@Davikkkkk</a>)
+                                                                                                                                                                                                on
+                        <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+                <p class="subtopico">
+                    for:
+                </p>
+                <p>
+                    Esse serve para dizer em qual elemento você quer colocar a label. Dentro dele você deve colocar o id do elemento desejado, ok mas o que é um id? É o que vamos falar no próximo tópico:
+                </p>
+
+                <p class="subtopico">
+                    id:
+                </p>
+                <p>
+                    Id é um identificador, tipo um name, lembra? Mas se o name era o seu nome, o id seria o seu cpf, porque ele é, e deve ser único para cada tag. no nosso exemplo, eu coloquei nome, então é isso que vamos colocar dentro do for.
+                </p>
+
+            </section>
+            <footer>
+                <!-- Botão para tirar duvidas -->
+                <button type="submit" class="duvidas" id="duvidas">Duvidas?</button>
+
+                <!-- Abre o whatsapp -->
+                <script>
+                    document.getElementById("duvidas").addEventListener('click', () => {
+                        window.open('https://wa.me/5581973272041?text=Davi,%20eu%20to%20com%20duvida%20me%20ajuda?%20:)')
+                    });
+                </script>
+            </footer>
+        </main>
+    </body>
+</html>
