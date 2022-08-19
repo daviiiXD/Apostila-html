@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300 &family=Roboto:wght@100;500;900&display=swap & family=PT+Mono&display=swap');
+body {
+    background-color: rgb(54, 52, 58);
+    margin: 0 auto;
+    max-width: 50%;
+    color: white;
+}
+header {
+    margin-top: 100px;
+    padding: 2%;
+    border-radius: 10px;
+
+    background-color: rgb(104, 183, 236);
+    box-shadow: 0 10px 5px 1px rgb(38, 37, 41);
+}
+footer {
+    margin: 10em 0;
+}
+section {
+    margin: 5% 0;
+    padding: 3%;
+    border: 5px solid rgb(104, 183, 236);
+    border-radius: 30px;
+}
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20pt;
+
+    font-weight: bold;
+}
+p {
+    font-family: 'PT Mono', monospace;
+    font-size: 12pt;
+    text-align: justify;
+    padding: 1%;
+}
+ul {
+    margin: 5em 0 5em 0;
+}
+titulo {
+    text-align: center;
+    font-size: 20pt;
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    font-family: 'PT Mono', monospace;
+    font-size: 20pt;
+    color: white;
+}
+a:visited {
+    color: rgb(70, 221, 70);
+}
+.topico {
+    position: relative;
+    font-size: 20pt;
+    color: rgb(240, 74, 74);
+    margin: 5% 0 0 5%;
+}
+.subtopico {
+    color: rgb(70, 221, 70);
+    font-size: 13pt;
+    font-weight: bold;
+}
+.duvidas {
+    transition: 1s;
+    background-color: rgb(70, 221, 70);
+    border: none;
+    border-radius: 10px;
+    padding: 3%;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+}
+.duvidas:hover {
+    transition: 0.1s;
+    transform: scale(1.2);
+}
