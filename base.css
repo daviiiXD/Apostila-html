@@ -31,7 +31,7 @@ h3 {
 p {
     font-family: 'PT Mono', monospace;
     font-size: 12pt;
-    text-align: justify;
+    text-align: left;
     padding: 1%;
 }
 ul {
@@ -78,6 +78,9 @@ a:visited {
 }
 @media (max-width: 600px) {
     body {
-        max-width: 100%;
+        max-width: 95%;
     }
-} 
+    .duvidas {
+        margin: 0 auto;
+    }
+}
