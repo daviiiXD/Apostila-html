@@ -76,14 +76,8 @@ a:visited {
     transition: 0.1s;
     transform: scale(1.2);
 }
-.codepen {
-    border-radius: 10px;
-}
 @media (max-width: 600px) {
     body {
         max-width: 95%;
-    }
-    .duvidas {
-        margin: 0 auto;
     }
 }
